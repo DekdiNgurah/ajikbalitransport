@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  /* border: 1px solid red; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", serif;
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #FF5B00;
+  --primary-color-hover: #d14900;
+  --secondary-color: #7EC3FF;
+  --accent-color: #B2DFDB;
+}
+
+nav .logo .text {
+  line-height: 15px !important;
+}
+
+nav .logo .top-up {
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+nav .logo .bottom-up {
+  font-family: "Bebas Neue", serif !important;
+}
+
+.nav-parent .nav-list .inactive {
+  transition: .3s ease-out;
+}
+
+.nav-parent .nav-list .active {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+}
+
+.nav-parent .nav-list .inactive:hover {
+  background-color: #e3e3e3;
+  border-radius: 6px;
+}
+
+.hamburger {
+  height: auto;
+  width: auto;
+  position: relative;
+  z-index: 50;
+}
+
+.hamburger .checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  z-index: 50;
+}
+
+nav .line {
+  transition: 0.5s;
+  stroke-width: 5px;
+  stroke: var(--primary-color);
+}
+
+.lineTop {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 25;
+}
+
+.lineBottom {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 60;
+}
+
+.lineMid {
+  stroke-dasharray: 40 40;
+}
+
+.checkbox:checked+svg .line {
+  stroke: crimson;
+}
+
+.checkbox:checked+svg .lineTop {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(45deg) translate(-7px, -5px);
+}
+
+.checkbox:checked+svg .lineMid {
+  stroke-dashoffset: 40;
+}
+
+.checkbox:checked+svg .lineBottom {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(-45deg) translate(-5px, 5px);
+}
+
+.slide-down {
+  max-height: 500px;
+}
+
+.slide-up {
+  max-height: 0;
+}
+
+.search-btn {
+  background-color: var(--primary-color);
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.wrp-destinations, .dsc-parent, .slider-content {
+  scrollbar-width: none;
+}
+
+.nextBtn,
+.prevBtn {
+  padding: 5px;
+  border-radius: 100%;
+  border: .7px solid #969699;
+  background-color: white;
+  cursor: pointer;
+  transition: .3s ease-out;
+}
+
+.nextBtn:active,
+.prevBtn:active {
+  background-color: #bbbbbb;
+}
+
+.nextBtn {
+  right: -20px;
+}
+
+.prevBtn {
+  left: -20px;
+}
+
+.why-choose .wrp-chs .chs-item,
+.dsc-contain .dsc-item {
+  transition: .3s ease-out;
+}
+
+.why-choose .wrp-chs .chs-item:hover,
+.dsc-contain .dsc-item:hover {
+  transform: translateY(-5px);
+}
+
+.ratings .str {
+  color: var(--primary-color);
+  line-height: 0 !important;
+}

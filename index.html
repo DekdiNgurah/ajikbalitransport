@@ -1,0 +1,629 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ajik Bali Transport</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/monsieurdd/mrD-SmoothScroller@latest/mrd-smoothscroller.js"></script> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">k
+
+</head>
+
+<body>
+    <nav class="w-full">
+        <div id="navbar"
+            class="w-full bg-white shadow-md fixed top-0 left-0 z-50 transition-transform duration-500 ease-in-out  md:px-10 lg:px-15 xl:px-15 2xl:px-15">
+            <div
+                class="navbar flex justify-between items-center px-4 md:px-0 lg:px-0 xl:px-0 2xl:px-0 py-3 md:py-4 lg:py-4 xl:py-4 2xl:py-4">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="" class="w-32 md:w-40 lg:w-40 xl:w-40 2xl:w-40">
+                    </a>
+                </div>
+
+                <!-- HAMBURGER TOGGLE BUTTON -->
+                <div class="hamburger lg:hidden">
+                    <input id="menu-toggle" class="checkbox" type="checkbox" />
+                    <svg fill="none" viewBox="0 0 46 50" height="46" width="46">
+                        <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black"
+                            d="M6 11L44 11" />
+                        <path class="lineMid line" stroke-linecap="round" stroke-width="4" stroke="black"
+                            d="M6 24H43" />
+                        <path class="lineBottom line" stroke-linecap="round" stroke-width="4" stroke="black"
+                            d="M6 37H43" />
+                    </svg>
+                </div>
+
+                <div class="hidden lg:flex flex-1 items-center justify-between ml-5">
+                    <div class="search-parent w-full max-w-md mr-6">
+                        <div class="search w-full">
+                            <div class="wrp flex items-center bg-gray-100 rounded-full px-4 py-3 space-x-5">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"
+                                            stroke-width="1" />
+                                    </svg>
+                                </span>
+                                <input type="text" placeholder="Search destinations..."
+                                    class="w-full border-none outine-none bg-transparent text-gray-700 placeholder-gray-500 focus:ring-0 focus:outline-none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-parent w-full ml-15">
+                        <ul class="nav-list flex justify-between w-full">
+                            <li class="px-3 py-2 active"><a href="#">Home</a></li>
+                            <li class="px-3 py-2 inactive"><a href="#">About&nbsp;Us</a></li>
+                            <li class="px-3 py-2 inactive"><a href="#">Contact&nbsp;Us</a></li>
+                            <li class="px-3 py-2 inactive"><a href="#">Destinations</a></li>
+                            <li class="px-3 py-2 inactive"><a href="#">Help</a></li>
+                            <li class="px-3 py-2 inactive"><a href="#">Lang</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOBILE MENU -->
+            <div id="mobile-menu" class="lg:hidden hidden transition-all duration-900 ease-in-out overflow-hidden">
+                <ul class="flex flex-col space-y-4 p-5">
+                    <li><a href="#" class="block text-gray-700">Home</a></li>
+                    <li><a href="#" class="block text-gray-700">About Us</a></li>
+                    <li><a href="#" class="block text-gray-700">Contact Us</a></li>
+                    <li><a href="#" class="block text-gray-700">Destinations</a></li>
+                    <li><a href="#" class="block text-gray-700">Help</a></li>
+                    <li><a href="#" class="block text-gray-700">Lang</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="lg:mt-15 relative">
+        <div
+            class="text absolute z-2 flex flex-col items-center justify-center w-full h-full px-5 md:px-10 lg:px-15 xl:px-15 2xl:px-15">
+            <div class="wrp text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-shadow-lg">Got a place in mind,
+                    huh?</h1>
+                <p class="text-sm hidden md:text-lg md:block lg:text-xl lg:block text-white mt-4 text-shadow-sm">
+                    Or just wanna go wherever the wind takes you? We gotchu — spontaneous trips make the best stories.
+                </p>
+            </div>
+            <div class="search-parent mt-10 md:w-xl lg:w-1/2 shadow-md">
+                <div class="search pl-5 pr-1 py-1 bg-white rounded-xl flex items-center space-x-5 ">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"
+                                stroke-width="1" />
+                        </svg>
+                    </span>
+                    <input type="text" placeholder="Search destinations..."
+                        class="w-full border-none outine-none bg-transparent text-gray-700 placeholder-gray-500 focus:ring-0 focus:outline-none">
+                    <button
+                        class="search-btn px-4 py-3 md:py-3 md:px-5 lg:py-3 lg:px-5 xl:py-3 xl:px-5 2xl:py-3 2xl:px-5 rounded-lg text-white text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-screen overflow-hidden" id="slider-container">
+            <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80"
+                    class="w-screen h-[500px] object-cover flex-shrink-0" alt="Slide 1">
+                <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1920&q=80"
+                    class="w-screen h-[500px] object-cover flex-shrink-0" alt="Slide 2">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80"
+                    class="w-screen h-[500px] object-cover flex-shrink-0" alt="Slide 3">
+            </div>
+
+            <!-- NAVIGATION -->
+            <button id="prev"
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 px-3 py-2 rounded-full bg-transparent z-10 cursor-pointer hidden lg:block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24">
+                    <path fill="white" d="M14.41 18.16L8.75 12.5l5.66-5.66l.7.71l-4.95 4.95l4.95 4.95z" />
+                </svg>
+            </button>
+            <button id="next"
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 px-3 py-2 rounded-full bg-transparent z-10 cursor-pointer hidden lg:block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24">
+                    <path fill="white" d="m8.59 18.16l5.66-5.66l-5.66-5.66l-.7.71l4.95 4.95l-4.95 4.95z" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div
+            class="popular-destinations mt-8 md:mt-8 lg:mt-15 xl:mt-15 2xl:mt-15 px-5 md:px-15 lg:px-15 xl:px15 2xl:px-15">
+            <h2 class="text-xl md:text-3xl lg:text-3xl font-semibold translate" data-en="Popular destinations right now"
+                data-id="Destinasi populer saat ini">Popular destinations right now</h2>
+            <div class="mt-6 md:mt-10 lg:mt-9 xl:mt-10 2xl:mt-10">
+                <div class="slider-container wrp-contain relative">
+                    <div
+                        class="wrp-destinations slider-content flex items-center space-x-5 overflow-x-scroll whitespace-nowrap scroll-smooth scroll-snap-x snap-mandatory">
+
+                        <div
+                            class="card min-w-[250px] md:min-w-[400px] lg:min-w-[400px] xl:min-w-[400px] 2xl:min-w-[400px] relative w-1/2 md:w-80 lg:w-95 xl:w-95 2xl:w-95 h-28 md:h-44 lg:h-48 xl:h-48 2xl:h-48 bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="relative">
+                                <img src="images/savaya.jpg" alt="" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black-500/50  opacity-70">
+                                </div>
+                            </div>
+                            <h3
+                                class="text-base md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-semibold text-white text-shadow-lg absolute bottom-2 left-2 md:bottom-4 md:left-4 lg:bottom-4 lg:left-4 xl:bottom-4 xl:left-4 2xl:bottom-4 2xl:left-4">
+                                Savaya Beach Club</h3>
+                        </div>
+                        <div
+                            class="card min-w-[250px] md:min-w-[400px] lg:min-w-[400px] xl:min-w-[400px] 2xl:min-w-[400px] relative w-1/2 md:w-80 lg:w-95 xl:w-95 2xl:w-95 h-28 md:h-44 lg:h-48 xl:h-48 2xl:h-48 bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="relative">
+                                <img src="images/savaya.jpg" alt="" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black-500/50  opacity-70">
+                                </div>
+                            </div>
+                            <h3
+                                class="text-base md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-semibold text-white text-shadow-lg absolute bottom-2 left-2 md:bottom-4 md:left-4 lg:bottom-4 lg:left-4 xl:bottom-4 xl:left-4 2xl:bottom-4 2xl:left-4">
+                                Savaya Beach Club</h3>
+                        </div>
+                        <div
+                            class="card min-w-[250px] md:min-w-[400px] lg:min-w-[400px] xl:min-w-[400px] 2xl:min-w-[400px] relative w-1/2 md:w-80 lg:w-95 xl:w-95 2xl:w-95 h-28 md:h-44 lg:h-48 xl:h-48 2xl:h-48 bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="relative">
+                                <img src="images/savaya.jpg" alt="" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black-500/50  opacity-70">
+                                </div>
+                            </div>
+                            <h3
+                                class="text-base md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-semibold text-white text-shadow-lg absolute bottom-2 left-2 md:bottom-4 md:left-4 lg:bottom-4 lg:left-4 xl:bottom-4 xl:left-4 2xl:bottom-4 2xl:left-4">
+                                Savaya Beach Club</h3>
+                        </div>
+                        <div
+                            class="card min-w-[250px] md:min-w-[400px] lg:min-w-[400px] xl:min-w-[400px] 2xl:min-w-[400px] relative w-1/2 md:w-80 lg:w-95 xl:w-95 2xl:w-95 h-28 md:h-44 lg:h-48 xl:h-48 2xl:h-48 bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="relative">
+                                <img src="images/savaya.jpg" alt="" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black-500/50  opacity-70">
+                                </div>
+                            </div>
+                            <h3
+                                class="text-base md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-semibold text-white text-shadow-lg absolute bottom-2 left-2 md:bottom-4 md:left-4 lg:bottom-4 lg:left-4 xl:bottom-4 xl:left-4 2xl:bottom-4 2xl:left-4">
+                                Savaya Beach Club</h3>
+                        </div>
+
+                        <div
+                            class="card min-w-[250px] md:min-w-[400px] lg:min-w-[400px] xl:min-w-[400px] 2xl:min-w-[400px] relative w-1/2 md:w-80 lg:w-95 xl:w-95 2xl:w-95 h-28 md:h-44 lg:h-48 xl:h-48 2xl:h-48 bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="relative">
+                                <img src="images/savaya.jpg" alt="" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black-500/50  opacity-70">
+                                </div>
+                            </div>
+                            <h3
+                                class="text-base md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-semibold text-white text-shadow-lg absolute bottom-2 left-2 md:bottom-4 md:left-4 lg:bottom-4 lg:left-4 xl:bottom-4 xl:left-4 2xl:bottom-4 2xl:left-4">
+                                Savaya Beach Club</h3>
+                        </div>
+
+                        <div
+                            class="card min-w-[250px] md:min-w-[400px] lg:min-w-[400px] xl:min-w-[400px] 2xl:min-w-[400px] relative w-1/2 md:w-80 lg:w-95 xl:w-95 2xl:w-95 h-28 md:h-44 lg:h-48 xl:h-48 2xl:h-48 bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="relative">
+                                <img src="images/savaya.jpg" alt="" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black-500/50  opacity-70">
+                                </div>
+                            </div>
+                            <h3
+                                class="text-base md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-semibold text-white text-shadow-lg absolute bottom-2 left-2 md:bottom-4 md:left-4 lg:bottom-4 lg:left-4 xl:bottom-4 xl:left-4 2xl:bottom-4 2xl:left-4">
+                                Savaya Beach Club</h3>
+                        </div>
+
+                        <div
+                            class="card min-w-[250px] md:min-w-[400px] lg:min-w-[400px] xl:min-w-[400px] 2xl:min-w-[400px] relative w-1/2 md:w-80 lg:w-95 xl:w-95 2xl:w-95 h-28 md:h-44 lg:h-48 xl:h-48 2xl:h-48 bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="relative">
+                                <img src="images/savaya.jpg" alt="" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black-500/50  opacity-70">
+                                </div>
+                            </div>
+                            <h3
+                                class="text-base md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-semibold text-white text-shadow-lg absolute bottom-2 left-2 md:bottom-4 md:left-4 lg:bottom-4 lg:left-4 xl:bottom-4 xl:left-4 2xl:bottom-4 2xl:left-4">
+                                Savaya Beach Club</h3>
+                        </div>
+                    </div>
+                    <div class="btn-action hidden md:block lg:block xl:block 2xl:block">
+                        <button class="prevBtn absolute top-1/2 transform -translate-y-1/2 bg-black/50 text-3xl z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#686868" fill-rule="evenodd"
+                                    d="M14.354 16.354a.5.5 0 0 1-.708 0L9.293 12l4.353-4.354a.5.5 0 0 1 .708.708L10.707 12l3.647 3.646a.5.5 0 0 1 0 .708"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <button class="nextBtn absolute top-1/2 transform -translate-y-1/2 bg-black/50 text-3xl z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#686868" fill-rule="evenodd"
+                                    d="M9.646 7.646a.5.5 0 0 1 .708 0L14.707 12l-4.353 4.354a.5.5 0 0 1-.708-.708L13.293 12l-3.647-3.646a.5.5 0 0 1 0-.708"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="why-choose mt-13 md:mt-15 lg:mt-20 xl:mt-20 2xl:mt-20 px-5 md:px-15 lg:px-15 xl:px15 2xl:px-15">
+            <h2 class="text-xl md:text-3xl lg:text-3xl font-semibold translate" data-en="Why choose Ajik Bali Transport"
+                data-id="Kenapa memilih Ajik Bali Transport">Why choose Ajik Bali Transport</h2>
+            <div
+                class="wrp-chs grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-5 mt-5 md:mt-10 lg:mt-9 xl:mt-10 2xl:mt-10">
+                <div class="chs-item bg-white rounded-lg shadow-md p-4 w-full">
+                    <img src="images/driver.png" alt="" class="w-18 md:w-19 lg:w-21 xl:w-21 2xl:w-21 mb-3">
+                    <h3 class="font-semibold text-lg md:text-2xl lg:text-xl xl:text-xl 2xl:text-xl">Experienced local
+                        drivers</h3>
+                    <p class="mt-2 text-sm md:text-base lg:text-sm xl:text-sm 2xl:text-sm">Our friendly local drivers
+                        know Bali inside out and are ready to guide you to the best destinations on the island.</p>
+                </div>
+                <div class="chs-item bg-white rounded-lg shadow-md p-4 w-full">
+                    <img src="images/price.png" alt="" class="w-13 md:w-14 lg:w-16 xl:w-16 2xl:w-16 mb-3 pt-4">
+                    <h3 class="font-semibold text-lg md:text-2xl lg:text-xl xl:text-xl 2xl:text-xl">Affordable Pricing
+                    </h3>
+                    <p class="mt-2 text-sm md:text-base lg:text-sm xl:text-sm 2xl:text-sm">We offer clear, honest rates
+                        with no hidden fees - making your travel worry-free and budget-friendly.</p>
+                </div>
+                <div class="chs-item bg-white rounded-lg shadow-md p-4 w-full">
+                    <img src="images/service.png" alt="" class="w-15 md:w-16 lg:w-18 xl:w-18 2xl:w-18 mb-3 pt-2">
+                    <h3 class="font-semibold text-lg md:text-2xl lg:text-xl xl:text-xl 2xl:text-xl">Customizable
+                        Services</h3>
+                    <p class="mt-2 text-sm md:text-base lg:text-sm xl:text-sm 2xl:text-sm">Whether it's airport
+                        transfers, full-day tours, or custom trips - we tailor our services to suit your travel needs.
+                    </p>
+                </div>
+                <div class="chs-item bg-white rounded-lg shadow-md p-4 w-full">
+                    <img src="images/safety.png" alt="" class="w-16 md:w-17 lg:w-19 xl:w-19 2xl:w-19 mb-3">
+                    <h3 class="font-semibold text-lg md:text-2xl lg:text-xl xl:text-xl 2xl:text-xl">Comfort & Safety
+                        First</h3>
+                    <p class="mt-2 text-sm md:text-base lg:text-sm xl:text-sm 2xl:text-sm">Our vehicles are
+                        well-maintained, clean, and comfortable, ensuring a safe and pleasant journey every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="dsc-contain mt-12 md:mt-14 lg:mt-19 xl:mt-19 2xl:mt-19 px-5 md:px-15 lg:px-15 xl:px15 2xl:px-15">
+            <h2 class="text-xl md:text-3xl lg:text-3xl font-semibold translate" data-en="Travelers' favorite choices"
+                data-id="Pilihan favorit traveler">Travelers' favorite choices</h2>
+            <div class="mt-5 md:mt-10 lg:mt-9 xl:mt-10 2xl:mt-10">
+                <div class="slider-container dsc-inner-wp relative">
+                    <div
+                        class="dsc-parent slider-content py-1 flex gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory w-full">
+                        <div
+                            class="dsc-item flex-col rounded-lg overflow-hidden max-w-[250px] md:max-w-[280px] lg:max-w-[300px] xl:max-w-[300px] 2xl:max-w-[300px] shrink-0 border border-gray-300">
+                            <div class="img">
+                                <img src="images/destinations-1.jpg" alt="" class="w-full max-h-50 object-cover">
+                            </div>
+                            <div class="description px-3 pt-1 pb-3">
+                                <span class="place text-sm text-gray-600">Ungasan, Kuta Selatan</span>
+                                <h3
+                                    class="font-semibold text-lg/6 md:text-xl/6 lg:text-xl/6 xl:text-xl/6 2xl:text-xl/6">
+                                    Ubud
+                                    Garuda Wisnu Kencana Culture Park</h3>
+                                <div class="hook mt-2 flex gap-1">
+                                    <span class="px-2 py-1 rounded-sm text-xs text-gray-700 bg-gray-200">
+                                        Book Now
+                                    </span>
+                                    <span class="px-2 py-1 rounded-sm text-xs text-gray-700 bg-gray-200">
+                                        For Today
+                                    </span>
+                                </div>
+                                <div class="ratings flex mt-3 gap-2 items-center">
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#FF5B00"
+                                                d="m12 16.102l-3.63 2.192q-.16.079-.297.064q-.136-.016-.265-.094q-.13-.08-.196-.226t-.012-.319l.966-4.11l-3.195-2.77q-.135-.11-.178-.263t.019-.293t.165-.23q.104-.087.28-.118l4.216-.368l1.644-3.892q.068-.165.196-.238T12 5.364t.288.073t.195.238l1.644 3.892l4.215.368q.177.03.281.119q.104.088.166.229q.061.14.018.293t-.178.263l-3.195 2.77l.966 4.11q.056.171-.011.318t-.197.226q-.128.08-.265.095q-.136.015-.296-.064z" />
+                                        </svg>
+                                        <span class="text-sm font-semibold flex items-center str">
+                                            4.5
+                                        </span>
+                                    </div>
+                                    <span class="text-xs text-gray-600">|</span>
+                                    <span class="text-sm text-gray-600">(67.729)</span>
+                                </div>
+                                <div
+                                    class="priceinfo mt-3 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row lg:items-center xl:items-center 2xl:items-center justify-between">
+                                    <span class="text-lg font-semibold text-gray-800">From IDR 300.000</span>
+                                    <span class="text-sm text-gray-500 line-through">IDR 400.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="dsc-item flex-col rounded-lg overflow-hidden max-w-[250px] md:max-w-[280px] lg:max-w-[300px] xl:max-w-[300px] 2xl:max-w-[300px] shrink-0 border border-gray-300">
+                            <div class="img">
+                                <img src="images/destinations-1.jpg" alt="" class="w-full max-h-50 object-cover">
+                            </div>
+                            <div class="description px-3 pt-1 pb-3">
+                                <span class="place text-sm text-gray-600">Ungasan, Kuta Selatan</span>
+                                <h3
+                                    class="font-semibold text-lg/6 md:text-xl/6 lg:text-xl/6 xl:text-xl/6 2xl:text-xl/6">
+                                    Ubud
+                                    Garuda Wisnu Kencana Culture Park</h3>
+                                <div class="hook mt-2 flex gap-1">
+                                    <span class="px-2 py-1 rounded-sm text-xs text-gray-700 bg-gray-200">
+                                        Book Now
+                                    </span>
+                                    <span class="px-2 py-1 rounded-sm text-xs text-gray-700 bg-gray-200">
+                                        For Today
+                                    </span>
+                                </div>
+                                <div class="ratings flex mt-3 gap-2 items-center">
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#FF5B00"
+                                                d="m12 16.102l-3.63 2.192q-.16.079-.297.064q-.136-.016-.265-.094q-.13-.08-.196-.226t-.012-.319l.966-4.11l-3.195-2.77q-.135-.11-.178-.263t.019-.293t.165-.23q.104-.087.28-.118l4.216-.368l1.644-3.892q.068-.165.196-.238T12 5.364t.288.073t.195.238l1.644 3.892l4.215.368q.177.03.281.119q.104.088.166.229q.061.14.018.293t-.178.263l-3.195 2.77l.966 4.11q.056.171-.011.318t-.197.226q-.128.08-.265.095q-.136.015-.296-.064z" />
+                                        </svg>
+                                        <span class="text-sm font-semibold flex items-center str">
+                                            4.5
+                                        </span>
+                                    </div>
+                                    <span class="text-xs text-gray-600">|</span>
+                                    <span class="text-sm text-gray-600">(67.729)</span>
+                                </div>
+                                <div
+                                    class="priceinfo mt-3 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row lg:items-center xl:items-center 2xl:items-center justify-between">
+                                    <span class="text-lg font-semibold text-gray-800">From IDR 300.000</span>
+                                    <span class="text-sm text-gray-500 line-through">IDR 400.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="dsc-item flex-col rounded-lg overflow-hidden max-w-[250px] md:max-w-[280px] lg:max-w-[300px] xl:max-w-[300px] 2xl:max-w-[300px] shrink-0 border border-gray-300">
+                            <div class="img">
+                                <img src="images/destinations-1.jpg" alt="" class="w-full max-h-50 object-cover">
+                            </div>
+                            <div class="description px-3 pt-1 pb-3">
+                                <span class="place text-sm text-gray-600">Ungasan, Kuta Selatan</span>
+                                <h3
+                                    class="font-semibold text-lg/6 md:text-xl/6 lg:text-xl/6 xl:text-xl/6 2xl:text-xl/6">
+                                    Ubud
+                                    Garuda Wisnu Kencana Culture Park</h3>
+                                <div class="hook mt-2 flex gap-1">
+                                    <span class="px-2 py-1 rounded-sm text-xs text-gray-700 bg-gray-200">
+                                        Book Now
+                                    </span>
+                                    <span class="px-2 py-1 rounded-sm text-xs text-gray-700 bg-gray-200">
+                                        For Today
+                                    </span>
+                                </div>
+                                <div class="ratings flex mt-3 gap-2 items-center">
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#FF5B00"
+                                                d="m12 16.102l-3.63 2.192q-.16.079-.297.064q-.136-.016-.265-.094q-.13-.08-.196-.226t-.012-.319l.966-4.11l-3.195-2.77q-.135-.11-.178-.263t.019-.293t.165-.23q.104-.087.28-.118l4.216-.368l1.644-3.892q.068-.165.196-.238T12 5.364t.288.073t.195.238l1.644 3.892l4.215.368q.177.03.281.119q.104.088.166.229q.061.14.018.293t-.178.263l-3.195 2.77l.966 4.11q.056.171-.011.318t-.197.226q-.128.08-.265.095q-.136.015-.296-.064z" />
+                                        </svg>
+                                        <span class="text-sm font-semibold flex items-center str">
+                                            4.5
+                                        </span>
+                                    </div>
+                                    <span class="text-xs text-gray-600">|</span>
+                                    <span class="text-sm text-gray-600">(67.729)</span>
+                                </div>
+                                <div
+                                    class="priceinfo mt-3 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row lg:items-center xl:items-center 2xl:items-center justify-between">
+                                    <span class="text-lg font-semibold text-gray-800">From IDR 300.000</span>
+                                    <span class="text-sm text-gray-500 line-through">IDR 400.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="dsc-item flex-col rounded-lg overflow-hidden max-w-[250px] md:max-w-[280px] lg:max-w-[300px] xl:max-w-[300px] 2xl:max-w-[300px] shrink-0 border border-gray-300">
+                            <div class="img">
+                                <img src="images/destinations-1.jpg" alt="" class="w-full max-h-50 object-cover">
+                            </div>
+                            <div class="description px-3 pt-1 pb-3">
+                                <span class="place text-sm text-gray-600">Ungasan, Kuta Selatan</span>
+                                <h3
+                                    class="font-semibold text-lg/6 md:text-xl/6 lg:text-xl/6 xl:text-xl/6 2xl:text-xl/6">
+                                    Ubud
+                                    Garuda Wisnu Kencana Culture Park</h3>
+                                <div class="hook mt-2 flex gap-1">
+                                    <span class="px-2 py-1 rounded-sm text-xs text-gray-700 bg-gray-200">
+                                        Book Now
+                                    </span>
+                                    <span class="px-2 py-1 rounded-sm text-xs text-gray-700 bg-gray-200">
+                                        For Today
+                                    </span>
+                                </div>
+                                <div class="ratings flex mt-3 gap-2 items-center">
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#FF5B00"
+                                                d="m12 16.102l-3.63 2.192q-.16.079-.297.064q-.136-.016-.265-.094q-.13-.08-.196-.226t-.012-.319l.966-4.11l-3.195-2.77q-.135-.11-.178-.263t.019-.293t.165-.23q.104-.087.28-.118l4.216-.368l1.644-3.892q.068-.165.196-.238T12 5.364t.288.073t.195.238l1.644 3.892l4.215.368q.177.03.281.119q.104.088.166.229q.061.14.018.293t-.178.263l-3.195 2.77l.966 4.11q.056.171-.011.318t-.197.226q-.128.08-.265.095q-.136.015-.296-.064z" />
+                                        </svg>
+                                        <span class="text-sm font-semibold flex items-center str">
+                                            4.5
+                                        </span>
+                                    </div>
+                                    <span class="text-xs text-gray-600">|</span>
+                                    <span class="text-sm text-gray-600">(67.729)</span>
+                                </div>
+                                <div
+                                    class="priceinfo mt-3 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row lg:items-center xl:items-center 2xl:items-center justify-between">
+                                    <span class="text-lg font-semibold text-gray-800">From IDR 300.000</span>
+                                    <span class="text-sm text-gray-500 line-through">IDR 400.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="dsc-item flex-col rounded-lg overflow-hidden max-w-[250px] md:max-w-[280px] lg:max-w-[300px] xl:max-w-[300px] 2xl:max-w-[300px] shrink-0 border border-gray-300">
+                            <div class="img">
+                                <img src="images/destinations-1.jpg" alt="" class="w-full max-h-50 object-cover">
+                            </div>
+                            <div class="description px-3 pt-1 pb-3">
+                                <span class="place text-sm text-gray-600">Ungasan, Kuta Selatan</span>
+                                <h3
+                                    class="font-semibold text-lg/6 md:text-xl/6 lg:text-xl/6 xl:text-xl/6 2xl:text-xl/6">
+                                    Ubud
+                                    Garuda Wisnu Kencana Culture Park</h3>
+                                <div class="hook mt-2 flex gap-1">
+                                    <span class="px-2 py-1 rounded-sm text-xs text-gray-700 bg-gray-200">
+                                        Book Now
+                                    </span>
+                                    <span class="px-2 py-1 rounded-sm text-xs text-gray-700 bg-gray-200">
+                                        For Today
+                                    </span>
+                                </div>
+                                <div class="ratings flex mt-3 gap-2 items-center">
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#FF5B00"
+                                                d="m12 16.102l-3.63 2.192q-.16.079-.297.064q-.136-.016-.265-.094q-.13-.08-.196-.226t-.012-.319l.966-4.11l-3.195-2.77q-.135-.11-.178-.263t.019-.293t.165-.23q.104-.087.28-.118l4.216-.368l1.644-3.892q.068-.165.196-.238T12 5.364t.288.073t.195.238l1.644 3.892l4.215.368q.177.03.281.119q.104.088.166.229q.061.14.018.293t-.178.263l-3.195 2.77l.966 4.11q.056.171-.011.318t-.197.226q-.128.08-.265.095q-.136.015-.296-.064z" />
+                                        </svg>
+                                        <span class="text-sm font-semibold flex items-center str">
+                                            4.5
+                                        </span>
+                                    </div>
+                                    <span class="text-xs text-gray-600">|</span>
+                                    <span class="text-sm text-gray-600">(67.729)</span>
+                                </div>
+                                <div
+                                    class="priceinfo mt-3 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row lg:items-center xl:items-center 2xl:items-center justify-between">
+                                    <span class="text-lg font-semibold text-gray-800">From IDR 300.000</span>
+                                    <span class="text-sm text-gray-500 line-through">IDR 400.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="btn-action hidden md:block lg:block xl:block 2xl:block">
+                        <button class="prevBtn absolute top-1/2 transform -translate-y-1/2 bg-black/50 text-3xl z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#686868" fill-rule="evenodd"
+                                    d="M14.354 16.354a.5.5 0 0 1-.708 0L9.293 12l4.353-4.354a.5.5 0 0 1 .708.708L10.707 12l3.647 3.646a.5.5 0 0 1 0 .708"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <button class="nextBtn absolute top-1/2 transform -translate-y-1/2 bg-black/50 text-3xl z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#686868" fill-rule="evenodd"
+                                    d="M9.646 7.646a.5.5 0 0 1 .708 0L14.707 12l-4.353 4.354a.5.5 0 0 1-.708-.708L13.293 12l-3.647-3.646a.5.5 0 0 1 0-.708"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="inspirations mt-13 md:mt-15 lg:mt-20 xl:mt-20 2xl:mt-20 px-5 md:px-15 lg:px-15 xl:px15 2xl:px-15">
+            <h2 class="text-xl md:text-3xl lg:text-3xl font-semibold translate" data-en="Inspiration for your next trip"
+                data-id="Inspirasi untuk perjalanan anda selanjutnya">Inspiration for your next trip</h2>
+            <div class="mt-6 md:mt-10 lg:mt-9 xl:mt-10 2xl:mt-10">
+                <div class="slider-container relative">
+                    <div class="slider-content flex items-center space-x-5 overflow-x-scroll whitespace-nowrap scroll-smooth scroll-snap-x snap-mandatory">
+                        .
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <script>
+        const scrollAmount = 300; // Jarak scroll per klik
+
+        document.querySelectorAll('.slider-container').forEach(container => {
+            const sliderContainer = container.querySelector('.slider-content');
+            const nextBtnContainer = container.querySelector('.nextBtn');
+            const prevBtnContainer = container.querySelector('.prevBtn');
+
+            function updateButtons() {
+                if (sliderContainer.scrollLeft <= 0) {
+                    prevBtnContainer.classList.add('hidden');
+                } else {
+                    prevBtnContainer.classList.remove('hidden');
+                }
+
+                const maxScrollLeft = sliderContainer.scrollWidth - sliderContainer.clientWidth;
+                if (sliderContainer.scrollLeft >= maxScrollLeft - 1) {
+                    nextBtnContainer.classList.add('hidden');
+                } else {
+                    nextBtnContainer.classList.remove('hidden');
+                }
+            }
+
+            nextBtnContainer.addEventListener('click', () => {
+                sliderContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                setTimeout(updateButtons, 300);
+            });
+
+            prevBtnContainer.addEventListener('click', () => {
+                sliderContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                setTimeout(updateButtons, 300);
+            });
+
+            // Jalankan saat load
+            window.addEventListener('load', updateButtons);
+            sliderContainer.addEventListener('scroll', updateButtons);
+        });
+    </script>
+
+
+    <script>
+        const slider = document.getElementById('slider');
+        const nextBtn = document.getElementById('next');
+        const prevBtn = document.getElementById('prev');
+        const slides = slider.querySelectorAll('img');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
+        }
+
+        function goToNext() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function goToPrev() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        nextBtn.addEventListener('click', () => {
+            goToNext();
+            resetAutoSlide();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            goToPrev();
+            resetAutoSlide();
+        });
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(goToNext, 4000);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        startAutoSlide();
+    </script>
+
+</body>
+
+</html>
