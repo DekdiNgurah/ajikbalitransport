@@ -124,7 +124,9 @@ nav .line {
   background-color: var(--primary-color-hover);
 }
 
-.wrp-destinations, .dsc-parent, .slider-content {
+.wrp-destinations,
+.dsc-parent,
+.slider-content {
   scrollbar-width: none;
 }
 
@@ -164,4 +166,55 @@ nav .line {
 .ratings .str {
   color: var(--primary-color);
   line-height: 0 !important;
+}
+
+.gallery-item {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  transition: all 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.destination-info {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.gallery-item:hover .destination-info {
+  opacity: 1;
+}
+
+.gallery-container .active {
+  background-color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
 }
