@@ -42,12 +42,16 @@ nav .logo .bottom-up {
 .nav-parent .nav-list .active {
   background-color: var(--primary-color);
   color: white;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .nav-parent .nav-list .inactive:hover {
   background-color: #e3e3e3;
-  border-radius: 6px;
+  border-radius: 10px;
+}
+
+#mobile-menu .active{
+  color: var(--primary-color);
 }
 
 .hamburger {
