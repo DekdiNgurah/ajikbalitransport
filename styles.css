@@ -229,6 +229,26 @@ select:focus {
   margin-left: 8px;
 }
 
+.scale-95 {
+  transform: scale(0.95);
+}
+
+.scale-100 {
+  transform: scale(1);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.transition-all {
+  transition: all 0.2s ease;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -238,6 +258,7 @@ select:focus {
     transform: rotate(360deg);
   }
 }
+
 
 
 /* Responsive adjustments */
