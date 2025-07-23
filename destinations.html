@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="w-full">
+        <div id="navbar"
+            class="w-full bg-white shadow-md fixed top-0 left-0 z-50 transition-transform duration-500 ease-in-out  md:px-10 lg:px-15 xl:px-15 2xl:px-15">
+            <div
+                class="navbar flex justify-between items-center px-4 md:px-0 lg:px-0 xl:px-0 2xl:px-0 py-3 md:py-4 lg:py-4 xl:py-4 2xl:py-4">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="" class="w-32 md:w-40 lg:w-35">
+                    </a>
+                </div>
+
+                <!-- HAMBURGER TOGGLE BUTTON -->
+                <div class="hamburger lg:hidden">
+                    <input id="menu-toggle" class="checkbox" type="checkbox" />
+                    <svg fill="none" viewBox="0 0 46 50" height="46" width="46">
+                        <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black"
+                            d="M6 11L44 11" />
+                        <path class="lineMid line" stroke-linecap="round" stroke-width="4" stroke="black"
+                            d="M6 24H43" />
+                        <path class="lineBottom line" stroke-linecap="round" stroke-width="4" stroke="black"
+                            d="M6 37H43" />
+                    </svg>
+                </div>
+
+                <div class="hidden lg:flex flex-1 items-center justify-between ml-5">
+                    <div class="search-parent w-full max-w-md mr-6">
+                        <div class="search w-full">
+                            <div class="wrp flex items-center bg-gray-100 rounded-full px-4 py-3 space-x-5">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"
+                                            stroke-width="1" />
+                                    </svg>
+                                </span>
+                                <input type="text" placeholder="Search destinations..."
+                                    class="w-full border-none outine-none bg-transparent text-gray-700 placeholder-gray-500 focus:ring-0 focus:outline-none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-parent w-full ml-35">
+                        <ul class="nav-list flex justify-between w-full">
+                            <li class="px-[10px] py-[6px] lg:text-sm inactive">
+                                <a href="index.html">
+                                    <span class="translate" data-en="Home" data-id="Beranda">
+                                        Home
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="px-[10px] py-[6px] lg:text-sm inactive">
+                                <a href="about.html">
+                                    <span class="translate" data-en="About&nbsp;us" data-id="Tentang&nbsp;kami">
+                                        About&nbsp;us
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="px-[10px] py-[6px] lg:text-sm inactive">
+                                <a href="contact.html">
+                                    <span class="translate" data-en="Contact&nbsp;us" data-id="Hubungi&nbsp;kami">
+                                        Contact&nbsp;Us
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="px-[10px] py-[6px] lg:text-sm active">
+                                <a href="destinations.html">
+                                    <span class="translate" data-en="Destinations" data-id="Destinasi">
+                                        Destinations</span>
+                                </a>
+                            </li>
+                            <li class="px-[10px] py-[6px] lg:text-sm inactive"><a href="faq.html">FAQ</a></li>
+                            <li class="px-[10px] py-[0px] inactive flex items-center justify-center">
+                                <div class="relative inline-block text-left lang-container">
+                                    <button class="lang-btn flex items-center justify-center gap-2">
+                                        <img class="selected-flag w-7 h-7" src="images/id.png" alt="ID">
+                                        <span class="iconify text-gray-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M18.53 9.53a.75.75 0 0 0 0-1.06H5.47a.75.75 0 0 0 0 1.06l6 6a.75.75 0 0 0 1.06 0z" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                    <div
+                                        class="lang-menu hidden absolute right-0 mt-3 w-40 bg-white rounded-xl shadow-xl border border-gray-200 transform scale-95 opacity-0 transition-all origin-top-right">
+                                        <button data-lang="id"
+                                            class="lang-option w-full flex items-center gap-2 py-2 px-4 hover:bg-gray-100 rounded-t-xl">
+                                            <img src="images/id.png" alt="Indonesia" class="w-6 h-6">
+                                            <span class="text-sm text-gray-700">Indonesia</span>
+                                        </button>
+                                        <button data-lang="en"
+                                            class="lang-option w-full flex items-center gap-2 py-2 px-4 hover:bg-gray-100 rounded-b-xl">
+                                            <img src="images/uk.png" alt="English" class="w-6 h-6">
+                                            <span class="text-sm text-gray-700">English</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOBILE MENU -->
+            <div id="mobile-menu" class="lg:hidden hidden transition-all duration-900 ease-in-out overflow-hidden">
+                <ul class="flex flex-col gap-4 p-5">
+                    <li><a href="index.html" class="block text-gray-700">Home</a></li>
+                    <li><a href="about.html" class="block text-gray-700">About Us</a></li>
+                    <li><a href="contact.html" class="block text-gray-700">Contact Us</a></li>
+                    <li><a href="destinations.html" class="block text-gray-700 active">Destinations</a></li>
+                    <li><a href="faq.html" class="block text-gray-700">FAQ</a></li>
+                    <li>
+                        <div class="relative inline-block text-left lang-container">
+                            <button class="lang-btn flex items-center justify-center gap-2">
+                                <img class="selected-flag w-7 h-7" src="images/id.png" alt="ID">
+                                <span class="iconify text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M18.53 9.53a.75.75 0 0 0 0-1.06H5.47a.75.75 0 0 0 0 1.06l6 6a.75.75 0 0 0 1.06 0z" />
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div
+                                class="lang-menu hidden absolute left-22 bottom-0 w-40 bg-white rounded-xl shadow-xl border border-gray-200 transform scale-95 opacity-0 transition-all origin-top-right">
+                                <button data-lang="id"
+                                    class="lang-option w-full flex items-center gap-2 py-2 px-4 hover:bg-gray-100 rounded-t-xl">
+                                    <img src="images/id.png" alt="Indonesia" class="w-6 h-6">
+                                    <span class="text-sm text-gray-700">Indonesia</span>
+                                </button>
+                                <button data-lang="en"
+                                    class="lang-option w-full flex items-center gap-2 py-2 px-4 hover:bg-gray-100 rounded-b-xl">
+                                    <img src="images/uk.png" alt="English" class="w-6 h-6">
+                                    <span class="text-sm text-gray-700">English</span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="border-t-1 border-gray-200 pb-10 mt-15 md:mt-15 lg:mt-20">
+        <div class="footer mt-13 md:mt-15 lg:mt-20 xl:mt-20 2xl:mt-20 px-5 md:px-15 lg:px-15">
+            <div
+                class="footer-content px-5 lg:px-35 xl:px-35 2xl:px-35 flex flex-col lg:flex-row md:flex-row justify-between space-y-5">
+                <div class="section">
+                    <img src="images/logo.svg" alt="" class="w-40 md:w-40 mb-4 lg:w-52">
+                </div>
+                <div class="sections">
+                    <h2 class="font-semibold text-xl translate" data-id="Halaman" data-en="Pages">Pages</h1>
+                        <div class="items flex flex-col gap-2 mt-2">
+                            <a href="index.html"
+                                class="text-gray-700 transition-all duration-300 ease-in-out hover:translate-x-2 transition-transform cursor-pointer translate"
+                                data-id="Beranda" data-en="Home">
+                                Home</a>
+                            <a href="contact.html"
+                                class="text-gray-700 transition-all duration-300 ease-in-out hover:translate-x-2 transition-transform cursor-pointer translate"
+                                data-id="Hubungi kami" data-en="Contact Us">
+                                Contact Us</a>
+                            <a href="about.html"
+                                class="text-gray-700 transition-all duration-300 ease-in-out hover:translate-x-2 transition-transform cursor-pointer translate"
+                                data-id="Tentang kami" data-en="About us">
+                                About Us</a>
+                            <a href="destinations.html"
+                                class="text-gray-700 transition-all duration-300 ease-in-out hover:translate-x-2 transition-transform cursor-pointer translate"
+                                data-id="Destinasi" data-en="Destinations">
+                                Destinations</a>
+                            <a href="faq.html"
+                                class="text-gray-700 transition-all duration-300 ease-in-out hover:translate-x-2 transition-transform cursor-pointer">
+                                FAQ</a>
+                        </div>
+                </div>
+                <div class="sections w-auto">
+                    <h2 class="font-semibold text-xl translate" data-en="Contact" data-id="Kontak">Contact</h2>
+                    <div class="items flex flex-col gap-2 mt-2">
+                        <p
+                            class="text-gray-700 transition-all duration-300 ease-in-out hover:translate-x-2 transition-transform cursor-pointer">
+                            ajikbalitransport@gmail.com</p>
+                        <a href="https://wa.link/pyyvgc"
+                            class="text-gray-700 transition-all duration-300 ease-in-out hover:translate-x-2 transition-transform cursor-pointer">
+                            +62 857-9219-4952
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <p class="text-gray-600 text-sm">&copy; 2025 Ajik Bali Transport. All rights reserved.</p>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
