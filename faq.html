@@ -125,11 +125,11 @@
             <!-- MOBILE MENU -->
             <div id="mobile-menu" class="lg:hidden hidden transition-all duration-900 ease-in-out overflow-hidden">
                 <ul class="flex flex-col gap-4 p-5">
-                    <li><a href="index.html" class="block text-gray-700">Home</a></li>
-                    <li><a href="about.html" class="block text-gray-700">About Us</a></li>
-                    <li><a href="contact.html" class="block text-gray-700">Contact Us</a></li>
-                    <li><a href="destinations.html" class="block text-gray-700">Destinations</a></li>
-                    <li><a href="faq.html" class="block text-gray-700 active">FAQ</a></li>
+                    <li><a href="index.html" class="translate block text-gray-700" data-id="Beranda" data-en="Home">Home</a></li>
+                    <li><a href="about.html" class="translate block text-gray-700" data-id="Tentang Kami" data-en="About Us">About Us</a></li>
+                    <li><a href="contact.html" class="translate block text-gray-700" data-id="Hubungi Kami" data-en="Contact Us">Contact Us</a></li>
+                    <li><a href="destinations.html" class="translate block text-gray-700" data-id="Destinasi" data-en="Destinations">Destinations</a></li>
+                    <li><a href="faq.html" class="translate block text-gray-700 active" data-id="FAQ" data-en="FAQ">FAQ</a></li>
                     <li>
                         <div class="relative inline-block text-left lang-container">
                             <button class="lang-btn flex items-center justify-center gap-2">
@@ -172,53 +172,65 @@
                     <div class="lg:mt-10">
                         <div class="spr mb-8">
                             <details class="border-b-1 border-gray-300 pb-4">
-                                <summary class="font-semibold text-base md:text-xl cursor-pointer">How do I make a booking?</summary>
-                                <p class="text-sm md:text-base">You can book your travel ticket through our by contacting us via WhatsApp.
+                                <summary class="font-semibold text-base md:text-xl cursor-pointer">How do I make a
+                                    booking?</summary>
+                                <p class="text-sm md:text-base">You can book your travel ticket through our by
+                                    contacting us via WhatsApp.
                                     Our team will assist you with the process.</p>
                             </details>
                         </div>
 
                         <div class="spr mb-8">
                             <details class="border-b-1 border-gray-300 pb-4">
-                                <summary class="font-semibold text-base md:text-xl cursor-pointer">Do you offer airport transfer
+                                <summary class="font-semibold text-base md:text-xl cursor-pointer">Do you offer airport
+                                    transfer
                                     services?</summary>
-                                <p class="text-sm md:text-base">Yes, we provide reliable and punctual airport pickup and drop-off services to ensure
+                                <p class="text-sm md:text-base">Yes, we provide reliable and punctual airport pickup and
+                                    drop-off services to ensure
                                     your journey starts and ends smoothly.</p>
                             </details>
                         </div>
 
                         <div class="spr mb-8">
                             <details class="border-b-1 border-gray-300 pb-4">
-                                <summary class="font-semibold text-base md:text-xl cursor-pointer">Can I customize my travel
+                                <summary class="font-semibold text-base md:text-xl cursor-pointer">Can I customize my
+                                    travel
                                     itinerary?</summary>
-                                <p class="text-sm md:text-base">Absolutely! We offer flexible travel packages that can be tailored to your preferred
+                                <p class="text-sm md:text-base">Absolutely! We offer flexible travel packages that can
+                                    be tailored to your preferred
                                     destinations and schedules.</p>
                             </details>
                         </div>
 
                         <div class="spr mb-8">
                             <details class="border-b-1 border-gray-300 pb-4">
-                                <summary class="font-semibold text-base md:text-xl cursor-pointer">What payment methods are
+                                <summary class="font-semibold text-base md:text-xl cursor-pointer">What payment methods
+                                    are
                                     available?</summary>
-                                <p class="text-sm md:text-base">We accept payments via bank transfer, credit card, and digital wallets. Please
+                                <p class="text-sm md:text-base">We accept payments via bank transfer, credit card, and
+                                    digital wallets. Please
                                     contact our support team for details.</p>
                             </details>
                         </div>
 
                         <div class="spr mb-8">
                             <details class="border-b-1 border-gray-300 pb-4">
-                                <summary class="font-semibold text-base md:text-xl cursor-pointer">Is it safe to travel with your
+                                <summary class="font-semibold text-base md:text-xl cursor-pointer">Is it safe to travel
+                                    with your
                                     agency?</summary>
-                                <p class="text-sm md:text-base">Yes, safety is our top priority. All our vehicles are regularly maintained, and our
+                                <p class="text-sm md:text-base">Yes, safety is our top priority. All our vehicles are
+                                    regularly maintained, and our
                                     drivers are experienced professionals.</p>
                             </details>
                         </div>
 
                         <div class="spr mb-8">
                             <details class="border-b-1 border-gray-300 pb-4">
-                                <summary class="font-semibold text-base md:text-xl cursor-pointer">Do you offer group discounts?
+                                <summary class="font-semibold text-base md:text-xl cursor-pointer">Do you offer group
+                                    discounts?
                                 </summary>
-                                <p class="text-sm md:text-base">Yes, we provide special discounts for group bookings. Contact us for a customized
+                                <p class="text-sm md:text-base">Yes, we provide special discounts for group bookings.
+                                    Contact us for a customized
                                     quote based on your group size.</p>
                             </details>
                         </div>
@@ -282,29 +294,28 @@
 
     <script>
         document.querySelectorAll("details").forEach((detail) => {
-    detail.addEventListener("toggle", function () {
-        const content = this.querySelector("p");
-        if (this.open) {
-            content.style.height = "0px";
-            content.style.overflow = "hidden";
-            content.style.transition = "height 0.3s ease";
-            requestAnimationFrame(() => {
-                content.style.height = content.scrollHeight + "px";
+            detail.addEventListener("toggle", function () {
+                const content = this.querySelector("p");
+                if (this.open) {
+                    content.style.height = "0px";
+                    content.style.overflow = "hidden";
+                    content.style.transition = "height 0.3s ease";
+                    requestAnimationFrame(() => {
+                        content.style.height = content.scrollHeight + "px";
+                    });
+                    setTimeout(() => {
+                        content.style.height = "auto";
+                        content.style.overflow = "visible";
+                    }, 300);
+                } else {
+                    content.style.height = content.scrollHeight + "px";
+                    content.style.overflow = "hidden";
+                    requestAnimationFrame(() => {
+                        content.style.height = "0px";
+                    });
+                }
             });
-            setTimeout(() => {
-                content.style.height = "auto";
-                content.style.overflow = "visible";
-            }, 300);
-        } else {
-            content.style.height = content.scrollHeight + "px";
-            content.style.overflow = "hidden";
-            requestAnimationFrame(() => {
-                content.style.height = "0px";
-            });
-        }
-    });
-});
-
+        });
     </script>
 </body>
 
