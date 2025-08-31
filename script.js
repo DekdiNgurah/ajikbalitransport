@@ -50,9 +50,9 @@ window.addEventListener("scroll", () => {
 
 // LANGUAGE SWTICHER
 const langContainers = document.querySelectorAll('.lang-container');
-const translatable = document.querySelectorAll('.translate');
 
 function setLanguage(lang) {
+    const translatable = document.querySelectorAll('.translate');
     const selectedOption = document.querySelector(`.lang-option[data-lang="${lang}"]`);
     if (!selectedOption) return;
 
@@ -63,7 +63,11 @@ function setLanguage(lang) {
     });
 
     translatable.forEach(el => {
-        el.textContent = el.getAttribute(`data-${lang}`);
+        const translation = el.getAttribute(`data-${lang}`);
+        if (translation) {
+            el.textContent = translation;
+        }
+        // el.textContent = el.getAttribute(`data-${lang}`);
     });
 
     localStorage.setItem('selectedLang', lang);
