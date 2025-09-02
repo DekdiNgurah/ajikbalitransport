@@ -123,11 +123,16 @@
             <!-- MOBILE MENU -->
             <div id="mobile-menu" class="lg:hidden hidden transition-all duration-900 ease-in-out overflow-hidden">
                 <ul class="flex flex-col gap-4 p-5">
-                    <li><a href="index.html" class="translate block text-gray-700" data-id="Beranda" data-en="Home">Home</a></li>
-                    <li><a href="about.html" class="translate block text-gray-700" data-id="Tentang Kami" data-en="About Us">About Us</a></li>
-                    <li><a href="contact.html" class="translate block text-gray-700" data-id="Hubungi Kami" data-en="Contact Us">Contact Us</a></li>
-                    <li><a href="destinations.html" class="translate block text-gray-700 active" data-id="Destinasi" data-en="Destinations">Destinations</a></li>
-                    <li><a href="faq.html" class="translate block text-gray-700" data-id="FAQ" data-en="FAQ">FAQ</a></li>
+                    <li><a href="index.html" class="translate block text-gray-700" data-id="Beranda"
+                            data-en="Home">Home</a></li>
+                    <li><a href="about.html" class="translate block text-gray-700" data-id="Tentang Kami"
+                            data-en="About Us">About Us</a></li>
+                    <li><a href="contact.html" class="translate block text-gray-700" data-id="Hubungi Kami"
+                            data-en="Contact Us">Contact Us</a></li>
+                    <li><a href="destinations.html" class="translate block text-gray-700 active" data-id="Destinasi"
+                            data-en="Destinations">Destinations</a></li>
+                    <li><a href="faq.html" class="translate block text-gray-700" data-id="FAQ" data-en="FAQ">FAQ</a>
+                    </li>
                     <li>
                         <div class="relative inline-block text-left lang-container">
                             <button class="lang-btn flex items-center justify-center gap-2">
@@ -232,8 +237,9 @@
                             data-filter="denpasar" data-en="Denpasar" data-id="Denpasar">Denpasar</button>
                     </div>
                 </div>
-                <div id="gallery-container" class="w-full gallery-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    
+                <div id="gallery-container"
+                    class="w-full gallery-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
                 </div>
             </div>
         </div>
@@ -306,6 +312,25 @@
             const filterBtns = document.querySelectorAll('.filter-btn');
             const filterBtns2 = document.querySelectorAll('.filter-btn-2');
             const galleryItems = document.querySelectorAll('.gallery-item');
+            const MAX_ALL = 20;
+
+            function shuffleArray(arr) {
+                const a = arr.slice();
+                for (let i = a.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [a[i], a[j]] = [a[j], a[i]];
+                }
+                return a;
+            }
+
+            function showRandomAll() {
+                const items = Array.from(document.querySelectorAll('.gallery-item'));
+                items.forEach(el => el.style.display = 'none');
+                const pick = shuffleArray(items).slice(0, MAX_ALL);
+                pick.forEach(el => el.style.display = 'block');
+            }
+
+            showRandomAll();
 
             filterBtns.forEach(btnFilter => {
                 btnFilter.addEventListener('click', function () {
@@ -337,17 +362,18 @@
 
                     const filter = this.getAttribute('data-filter');
 
-                    galleryItems.forEach(item => {
-                        if (filter === 'all' || item.getAttribute('data-region') === filter) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
+                    if (filter === 'all') {
+                        showRandomAll();
+                    } else {
+                        galleryItems.forEach(item => {
+                            item.style.display = (item.getAttribute('data-region') === filter) ? 'block' : 'none';
+                        });
+                    }
                 });
             });
         });
     </script>
+
 
 </body>
 
