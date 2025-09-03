@@ -129,10 +129,10 @@ const destinations = [
         alt: "Jatiluwih Rice Terraces",
         title: "Jatiluwih Rice Terraces",
         descCrd: { descId: "Sawah Terasering Jatiluwih", descEn: "Jatiluwih Rice Terraces" },
-        ratingEn: "4.9 (UNESCO heritage)",
-        ratingId: "4.9 (Warisan Dunia UNESCO)",
-        ratingText: "4.9",
-        badge: { textEn: "Scenic", textId: "Pemandangan", color: "bg-green-500" }
+        ratingEn: "4.5 (152 reviews)",
+        ratingId: "4.5 (152 pengulas)",
+        ratingText: "4.5 (152)",
+        badge: { textEn: "", textId: "", color: "" }
     },
     {
         category: "pantai",
@@ -141,10 +141,10 @@ const destinations = [
         alt: "Tanah Lot Temple on the coast",
         title: "Tanah Lot Temple Beach",
         descCrd: { descId: "Pantai dan Pura Tanah Lot", descEn: "Tanah Lot Temple Beach" },
-        ratingEn: "4.8 (Iconic sunset spot)",
-        ratingId: "4.8 (Ikon matahari terbenam)",
-        ratingText: "4.8",
-        badge: { textEn: "Cultural Icon", textId: "Ikon Budaya", color: "bg-yellow-400" }
+        ratingEn: "4.5 (152 reviews)",
+        ratingId: "4.5 (152 pengulas)",
+        ratingText: "4.5 (152)",
+        badge: { textEn: "Hot", textId: "Hangat", color: "bg-red-500" }
     },
     {
         category: "beach",
@@ -153,10 +153,10 @@ const destinations = [
         alt: "Soka Beach",
         title: "Soka Beach",
         descCrd: { descId: "Pantai Soka", descEn: "Soka Beach" },
-        ratingEn: "4.6 (Black sand, surfing)",
-        ratingId: "4.6 (Pasir hitam & surfing)",
-        ratingText: "4.6",
-        badge: { textEn: "Surf Spot", textId: "Spot Selancar", color: "bg-blue-500" }
+        ratingEn: "4.5 (152 reviews)",
+        ratingId: "4.5 (152 pengulas)",
+        ratingText: "4.5 (152)",
+        badge: { textEn: "", textId: "", color: "" }
     },
     {
         category: "pantai",
@@ -165,10 +165,10 @@ const destinations = [
         alt: "Balian Beach",
         title: "Balian Beach",
         descCrd: { descId: "Pantai Balian", descEn: "Balian Beach" },
-        ratingEn: "4.7 (Big waves, tranquil)",
-        ratingId: "4.7 (Ombak besar, tenang)",
-        ratingText: "4.7",
-        badge: { textEn: "Surfer’s Choice", textId: "Pilihan Peselancar", color: "bg-blue-500" }
+        ratingEn: "4.5 (152 reviews)",
+        ratingId: "4.5 (152 pengulas)",
+        ratingText: "4.5 (152)",
+        badge: { textEn: "", textId: "", color: "" }
     },
     {
         category: "waterfall",
@@ -177,10 +177,10 @@ const destinations = [
         alt: "Leke-Leke Waterfall",
         title: "Leke-Leke Waterfall",
         descCrd: { descId: "Air Terjun Leke-Leke", descEn: "Leke-Leke Waterfall" },
-        ratingEn: "4.8 (Hidden gem)",
-        ratingId: "4.8 (Permata tersembunyi)",
-        ratingText: "4.8",
-        badge: { textEn: "Adventure", textId: "Petualangan", color: "bg-red-500" }
+        ratingEn: "4.5 (152 reviews)",
+        ratingId: "4.5 (152 pengulas)",
+        ratingText: "4.5 (152)",
+        badge: { textEn: "", textId: "", color: "" }
     },
     {
         category: "waterfall",
@@ -189,10 +189,10 @@ const destinations = [
         alt: "Blahmantung Waterfall",
         title: "Blahmantung Waterfall",
         descCrd: { descId: "Air Terjun Blahmantung", descEn: "Blahmantung Waterfall" },
-        ratingEn: "4.8 (Forest trail adventure)",
-        ratingId: "4.8 (Petualangan hutan)",
-        ratingText: "4.8",
-        badge: { textEn: "Natural", textId: "Alami", color: "bg-green-500" }
+        ratingEn: "4.5 (152 reviews)",
+        ratingId: "4.5 (152 pengulas)",
+        ratingText: "4.5 (152)",
+        badge: { textEn: "", textId: "", color: "" }
     },
     {
         category: "budaya",
@@ -201,10 +201,10 @@ const destinations = [
         alt: "Puri Anom Tabanan",
         title: "Puri Anom",
         descCrd: { descId: "Puri Anom Tabanan", descEn: "Puri Anom Tabanan" },
-        ratingEn: "4.5 (Royal heritage)",
-        ratingId: "4.5 (Warisan Kerajaan)",
-        ratingText: "4.5",
-        badge: { textEn: "Heritage", textId: "Warisan", color: "bg-purple-500" }
+        ratingEn: "4.5 (152 reviews)",
+        ratingId: "4.5 (152 pengulas)",
+        ratingText: "4.5 (152)",
+        badge: { textEn: "", textId: "", color: "" }
     },
     {
         category: "budaya",
@@ -213,10 +213,10 @@ const destinations = [
         alt: "Subak Museum",
         title: "Subak Museum",
         descCrd: { descId: "Museum Subak", descEn: "Subak Museum" },
-        ratingEn: "4.6 (Cultural education)",
-        ratingId: "4.6 (Edukasi Budaya)",
-        ratingText: "4.6",
-        badge: { textEn: "Culture", textId: "Budaya", color: "bg-purple-500" }
+        ratingEn: "4.5 (152 reviews)",
+        ratingId: "4.5 (152 pengulas)",
+        ratingText: "4.5 (152)",
+        badge: { textEn: "", textId: "", color: "" }
     },
     {
         category: "waterfall",
@@ -225,10 +225,10 @@ const destinations = [
         alt: "Alas Kedaton Monkey Forest",
         title: "Alas Kedaton (Monkey Forest)",
         descCrd: { descId: "Alas Kedaton", descEn: "Alas Kedaton Monkey Forest" },
-        ratingEn: "4.7 (Spiritual & nature)",
-        ratingId: "4.7 (Spiritual & alam)",
-        ratingText: "4.7",
-        badge: { textEn: "Wildlife", textId: "Satwa", color: "bg-green-500" }
+        ratingEn: "4.5 (152 reviews)",
+        ratingId: "4.5 (152 pengulas)",
+        ratingText: "4.5 (152)",
+        badge: { textEn: "", textId: "", color: "" }
     },
     {
         category: "budaya",
@@ -237,10 +237,254 @@ const destinations = [
         alt: "Bali Botanic Garden",
         title: "Bali Botanic Garden",
         descCrd: { descId: "Kebun Raya Bali", descEn: "Bali Botanic Garden" },
-        ratingEn: "4.8 (Botanical wonders)",
-        ratingId: "4.8 (Keajaiban Botani)",
-        ratingText: "4.8",
-        badge: { textEn: "Nature & Learn", textId: "Alam & Edukasi", color: "bg-green-500" }
+        ratingEn: "4.5 (152 reviews)",
+        ratingId: "4.5 (152 pengulas)",
+        ratingText: "4.5 (152)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+
+    // BADUNG
+    {
+        category: "beach",
+        region: "badung",
+        img: "https://www.luxurybalitravel.com/wp-content/uploads/2024/03/melasti-Beach.jpg",
+        alt: "Melasti Beach",
+        title: "Melasti Beach",
+        descCrd: { descId: "Pantai Melasti, Ungasan", descEn: "Melasti Beach, Ungasan" },
+        ratingEn: "4.7 (3.804 reviews)",
+        ratingId: "4.7 (3.804 pengulas)",
+        ratingText: "4.7 (3.804)",
+        badge: { textEn: "Most Visited", textId: "Sering Dikunjungi", color: "bg-green-500" }
+    },
+    {
+        category: "beach",
+        region: "badung",
+        img: "https://www.nopostcode.com/wp-content/uploads/2022/07/Pandawa-Beach-Pantai-Pandawa-14.jpg",
+        alt: "Pandawa Beach",
+        title: "Pandawa Beach",
+        descCrd: { descId: "Pantai Pandawa, Kutuh", descEn: "Pandawa Beach, Kutuh" },
+        ratingEn: "4.6 (10.525 reviews)",
+        ratingId: "4.6 (10.525 pengulas)",
+        ratingText: "4.6 (10.525)",
+        badge: { textEn: "Most Visited", textId: "Sering Dikunjungi", color: "bg-green-500" }
+    },
+    {
+        category: "beach club",
+        region: "badung",
+        img: "https://www.asia-bars.com/wp-content/uploads/2014/07/potato-head-beach-club-bali-7.jpg",
+        alt: "Potato Head Beach Club",
+        title: "Potato Head Beach Club",
+        descCrd: { descId: "Seminyak, Badung", descEn: "Seminyak, Badung" },
+        ratingEn: "4.6 (21.963 reviews)",
+        ratingId: "4.6 (21.963 pengulas)",
+        ratingText: "4.6 (21.963)",
+        badge: { textEn: "Most Visited", textId: "Sering Dikunjungi", color: "bg-green-500" }
+    },
+    {
+        category: "waterfall",
+        region: "badung",
+        img: "https://www.nopostcode.com/wp-content/uploads/2022/10/Nungnung-Waterfall-23-1280x1024.jpg",
+        alt: "Nungnung Waterfall",
+        title: "Nungnung Waterfall",
+        descCrd: { descId: "Air Terjun Nungnung, Pelaga", descEn: "Nungnung Waterfall, Pelaga" },
+        ratingEn: "4.8 (891 reviews)",
+        ratingId: "4.8 (891 pengulas)",
+        ratingText: "4.8 (891)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "culture",
+        region: "badung",
+        img: "images/destinations-1.jpg",
+        alt: "Garuda Wisnu Kencana",
+        title: "Garuda Wisnu Kencana Cultural Park",
+        descCrd: { descId: "Ungasan, Badung", descEn: "Ungasan, Badung" },
+        ratingEn: "4.5 (68.505 reviews)",
+        ratingId: "4.5 (68.505 pengulas)",
+        ratingText: "4.5 (68.505)",
+        badge: { textEn: "Most popular", textId: "Palin populer", color: "bg-green-400" }
+    },
+    {
+        category: "culture",
+        region: "badung",
+        img: "https://www.theungasan.com/wp-content/uploads/2020/01/bali-uluwatu-temple-goibibo.jpg",
+        alt: "Uluwatu Temple",
+        title: "Uluwatu Temple",
+        descCrd: { descId: "Pura Luhur Uluwatu, Pecatu", descEn: "Uluwatu Temple, Pecatu" },
+        ratingEn: "4.6 (48.347 reviews)",
+        ratingId: "4.6 (48.347 pengulas)",
+        ratingText: "4.6 (48.347)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "culture",
+        region: "badung",
+        img: "https://a.cdn-hotels.com/gdcs/production167/d194/32151e58-ca6b-4fde-8d33-f759f3234472.jpg",
+        alt: "Pura Taman Ayun",
+        title: "Pura Taman Ayun",
+        descCrd: { descId: "Mengwi, Badung", descEn: "Taman Ayun Temple, Mengwi" },
+        ratingEn: "4.6 (9.343 reviews)",
+        ratingId: "4.6 (9.343 pengulas)",
+        ratingText: "4.6 (9.343)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "beach",
+        region: "badung",
+        img: "https://a.cdn-hotels.com/gdcs/production79/d897/2c740d3c-d511-44aa-9ac9-c27500a0cc1b.jpg",
+        alt: "Kuta Beach",
+        title: "Kuta Beach",
+        descCrd: { descId: "Pantai Kuta, Badung", descEn: "Kuta Beach, Badung" },
+        ratingEn: "4.5 (41.752 reviews)",
+        ratingId: "4.5 (41.752 pengulas)",
+        ratingText: "4.5 (41.752)",
+        badge: { textEn: "Best destination", textId: "Destinasi terbaik", color: "bg-yellow-600" }
+    },
+    {
+        category: "culture",
+        region: "badung",
+        img: "https://finnsbeachclub.com/wp-content/uploads/2024/05/Sangeh-Monkey-Forest-discovabalicom.jpg",
+        alt: "Sangeh Monkey Forest",
+        title: "Sangeh Monkey Forest",
+        descCrd: { descId: "Sangeh, Badung", descEn: "Sangeh Monkey Forest" },
+        ratingEn: "4.6 (8.107 reviews)",
+        ratingId: "4.6 (8.107 pengulas)",
+        ratingText: "4.6 (8.107)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "specialty",
+        region: "badung",
+        img: "https://cdn.idntimes.com/content-images/post/20210929/waterbombali-1632890068402884-f91bb3371dacd70ecc0d73e75dd61ff4.jpg",
+        alt: "Waterbom Bali",
+        title: "Waterbom Bali",
+        descCrd: { descId: "Kuta, Badung", descEn: "Waterbom Bali, Kuta" },
+        ratingEn: "4.7 (16.744 reviews)",
+        ratingId: "4.7 (16.744 pengulas)",
+        ratingText: "4.7 (16.744)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+
+    // DENPASAR
+    {
+        category: "beach",
+        region: "denpasar",
+        img: "https://www.anywhere.com/img-a/indonesia/destinations/sanur/sanur.bali.jpg",
+        alt: "Sanur Beach",
+        title: "Sanur Beach",
+        descCrd: { descId: "Pantai Sanur, Denpasar", descEn: "Sanur Beach, Denpasar" },
+        ratingEn: "4.7 (1,200 reviews)",
+        ratingId: "4.7 (1.200 pengulas)",
+        ratingText: "4.7 (1,200)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "beach",
+        region: "denpasar",
+        img: "https://a.cdn-hotels.com/gdcs/production113/d226/778977f4-2185-4213-bd2b-44c2f8272687.jpg",
+        alt: "Sindhu Beach",
+        title: "Sindhu Beach",
+        descCrd: { descId: "Pantai Sindhu, Denpasar", descEn: "Sindhu Beach, Denpasar" },
+        ratingEn: "4.6 (300 reviews)",
+        ratingId: "4.6 (300 pengulas)",
+        ratingText: "4.6 (300)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "cultural",
+        region: "denpasar",
+        img: "https://www.rentalmobilbali.net/wp-content/uploads/2014/09/Museum-Bali-Denpasar.jpg",
+        alt: "Bali Museum",
+        title: "Bali Museum",
+        descCrd: { descId: "Museum Bali, Denpasar", descEn: "Bali Museum, Denpasar" },
+        ratingEn: "4.5 (800 reviews)",
+        ratingId: "4.5 (800 pengulas)",
+        ratingText: "4.5 (800)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "cultural",
+        region: "denpasar",
+        img: "https://www.nowbali.co.id/wp-content/uploads/2021/06/Taman-Werdhi-Budaya-Art-Center-Bali-5.jpg",
+        alt: "Taman Werdhi Budaya Art Centre",
+        title: "Taman Werdhi Budaya Art Centre",
+        descCrd: { descId: "Art Centre Denpasar", descEn: "Taman Werdhi Budaya Art Centre" },
+        ratingEn: "4.4 (500 reviews)",
+        ratingId: "4.4 (500 pengulas)",
+        ratingText: "4.4 (500)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "market",
+        region: "denpasar",
+        img: "https://a.cdn-hotels.com/gdcs/production23/d1343/b0ae51ff-4f16-45a0-a8df-6080ec2919c1.jpg",
+        alt: "Pasar Kumbasari",
+        title: "Pasar Kumbasari",
+        descCrd: { descId: "Pasar Seni Kumbasari, Denpasar", descEn: "Kumbasari Art Market, Denpasar" },
+        ratingEn: "4.3 (650 reviews)",
+        ratingId: "4.3 (650 pengulas)",
+        ratingText: "4.3 (650)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "market",
+        region: "denpasar",
+        img: "https://a.cdn-hotels.com/gdcs/production15/d1225/3bbd9cd0-b41d-4355-b759-56d2872eceea.jpg",
+        alt: "Pasar Badung",
+        title: "Pasar Badung",
+        descCrd: { descId: "Pasar Badung, Denpasar", descEn: "Badung Market, Denpasar" },
+        ratingEn: "4.2 (900 reviews)",
+        ratingId: "4.2 (900 pengulas)",
+        ratingText: "4.2 (900)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "temple",
+        region: "denpasar",
+        img: "https://www.orientalarchitecture.com/gallery/indonesia/denpasar-regency/pura-agung-jagatnatha/misc/pura-agung-jagatnatha_BIG.jpg",
+        alt: "Pura Jagatnatha",
+        title: "Pura Jagatnatha",
+        descCrd: { descId: "Pura Jagatnatha, Denpasar", descEn: "Jagatnatha Temple, Denpasar" },
+        ratingEn: "4.4 (700 reviews)",
+        ratingId: "4.4 (700 pengulas)",
+        ratingText: "4.4 (700)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "monument",
+        region: "denpasar",
+        img: "https://balistarisland.com/wp-content/uploads/2016/03/bajrasandhimonument2.jpg",
+        alt: "Bajra Sandhi Monument",
+        title: "Bajra Sandhi Monument",
+        descCrd: { descId: "Monumen Bajra Sandhi, Denpasar", descEn: "Bajra Sandhi Monument, Denpasar" },
+        ratingEn: "4.6 (1,100 reviews)",
+        ratingId: "4.6 (1.100 pengulas)",
+        ratingText: "4.6 (1,100)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "cultural",
+        region: "denpasar",
+        img: "https://www.denpasarkota.go.id/assets/CKImages/images/2.jpg",
+        alt: "Pura Maospahit",
+        title: "Pura Maospahit",
+        descCrd: { descId: "Pura Maospahit, Denpasar", descEn: "Pura Maospahit, Denpasar" },
+        ratingEn: "4.3 (400 reviews)",
+        ratingId: "4.3 (400 pengulas)",
+        ratingText: "4.3 (400)",
+        badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "conservation",
+        region: "denpasar",
+        img: "https://thebalisun.com/wp-content/uploads/2023/12/Serangan-Island-Could-Be-Next-Big-Tourist-Destination-In-Bali-In-2024.jpg",
+        alt: "Serangan Island",
+        title: "Serangan Island (Turtle Island)",
+        descCrd: { descId: "Pulau Serangan, Denpasar", descEn: "Serangan Island, Denpasar" },
+        ratingEn: "4.5 (350 reviews)",
+        ratingId: "4.5 (350 pengulas)",
+        ratingText: "4.5 (350)",
+        badge: { textEn: "", textId: "", color: "" }
     }
 
 ];
