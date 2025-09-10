@@ -176,7 +176,7 @@
             </button>
             <div class="grid grid-cols-1 lg:grid-cols-[2fr_8fr] gap-5 w-full">
                 <div id="sidebar"
-                    class="navigasi fixed top-0 left-0 h-full w-64 bg-white shadow-lg border-r border-gray-200 transform -translate-x-full overflow-y-scroll lg:overflow-hidden transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:w-auto lg:h-auto lg:shadow-none lg:border-none px-5 lg:pr-7 lg:pl-0 py-5 lg:pb-5 lg:pt-0 z-40">
+                    class="navigasi sticky top-0 left-0 h-full w-64 bg-white shadow-lg border-r border-gray-200 transform -translate-x-full overflow-y-scroll lg:overflow-hidden transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 lg:w-auto lg:h-auto lg:shadow-none lg:border-none px-5 lg:pr-7 lg:pl-0 py-5 lg:pb-5 lg:pt-0 z-40">
                     <h1 class="text-xl md:text-2xl font-semibold translate mt-20 md:mt-40 lg:mt-0" data-id="Destinasi"
                         data-en="Destination">Destinasi
                     </h1>
@@ -187,18 +187,17 @@
                             Destinations</button>
                         <button
                             class="filter-btn cursor-pointer px-4 py-2 rounded-full text-sm md:text-base lg:text-sm bg-white border border-gray-300 translate text-gray-700"
-                            data-filter="asia" data-en="Beach" data-id="Pantai">Beach</button>
+                            data-filter="beach" data-en="Beach" data-id="Pantai">Beach</button>
                         <button
                             class="filter-btn cursor-pointer px-4 py-2 rounded-full text-sm md:text-base lg:text-sm bg-white border border-gray-300 translate text-gray-700"
-                            data-filter="europe" data-en="Waterfall" data-id="Air terjun">Waterfall</button>
+                            data-filter="waterfall" data-en="Waterfall" data-id="Air terjun">Waterfall</button>
                         <button
                             class="filter-btn cursor-pointer px-4 py-2 rounded-full text-sm md:text-base lg:text-sm bg-white border border-gray-300 translate text-gray-700"
-                            data-filter="america" data-en="Beach club" data-id="Klub pantai">Beach Club</button>
+                            data-filter="beach-club" data-en="Beach club" data-id="Klub pantai">Beach Club</button>
                         <button
                             class="filter-btn cursor-pointer px-4 py-2 rounded-full text-sm md:text-base lg:text-sm bg-white border border-gray-300 translate text-gray-700"
-                            data-filter="beach" data-en="Culture" data-id="Budaya">Culture</button>
+                            data-filter="culture" data-en="Culture & Others" data-id="Budaya & Lainnya">Culture</button>
                     </div>
-
                     <div class="">
                         <h1 class="text-xl md:text-2xl font-semibold translate lg:mt-0" data-id="Wilayah"
                             data-en="Region">Wilayah
@@ -309,10 +308,13 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const filterBtns2 = document.querySelectorAll('.filter-btn-2');
+            const filterBtns = document.querySelectorAll('.filter-btn');   // category
+            const filterBtns2 = document.querySelectorAll('.filter-btn-2'); // region
             const galleryItems = document.querySelectorAll('.gallery-item');
             const MAX_ALL = 20;
+
+            let currentCategory = "all";
+            let currentRegion = "all";
 
             function shuffleArray(arr) {
                 const a = arr.slice();
@@ -324,14 +326,30 @@
             }
 
             function showRandomAll() {
-                const items = Array.from(document.querySelectorAll('.gallery-item'));
+                const items = Array.from(galleryItems);
                 items.forEach(el => el.style.display = 'none');
                 const pick = shuffleArray(items).slice(0, MAX_ALL);
                 pick.forEach(el => el.style.display = 'block');
             }
 
+            // fungsi utama pengecekan filter
+            function applyFilter() {
+                galleryItems.forEach(item => {
+                    const matchCategory = (currentCategory === "all" || item.getAttribute("data-category") === currentCategory);
+                    const matchRegion = (currentRegion === "all" || item.getAttribute("data-region") === currentRegion);
+
+                    if (matchCategory && matchRegion) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            }
+
+            // default pertama kali
             showRandomAll();
 
+            // filter category
             filterBtns.forEach(btnFilter => {
                 btnFilter.addEventListener('click', function () {
                     filterBtns.forEach(b => b.classList.remove('active', 'bg-[var(--primary-color)]', 'text-white'));
@@ -340,18 +358,12 @@
                     this.classList.add('active', 'bg-[var(--primary-color)]', 'text-white');
                     this.classList.remove('bg-white', 'border', 'text-gray-700');
 
-                    const filter = this.getAttribute('data-filter');
-
-                    galleryItems.forEach(item => {
-                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
+                    currentCategory = this.getAttribute('data-filter');
+                    applyFilter();
                 });
             });
 
+            // filter region
             filterBtns2.forEach(btnFilter => {
                 btnFilter.addEventListener('click', function () {
                     filterBtns2.forEach(b => b.classList.remove('active', 'bg-[var(--secondary-color)]', 'text-white'));
@@ -360,20 +372,12 @@
                     this.classList.add('active', 'bg-[var(--secondary-color)]', 'text-white');
                     this.classList.remove('bg-white', 'border', 'text-gray-700');
 
-                    const filter = this.getAttribute('data-filter');
-
-                    if (filter === 'all') {
-                        showRandomAll();
-                    } else {
-                        galleryItems.forEach(item => {
-                            item.style.display = (item.getAttribute('data-region') === filter) ? 'block' : 'none';
-                        });
-                    }
+                    currentRegion = this.getAttribute('data-filter');
+                    applyFilter();
                 });
             });
         });
     </script>
-
 
 </body>
 

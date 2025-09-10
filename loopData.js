@@ -219,7 +219,7 @@ const destinations = [
         badge: { textEn: "", textId: "", color: "" }
     },
     {
-        category: "waterfall",
+        category: "culture",
         region: "tabanan",
         img: "https://www.bali-tourism-board.com/wp-content/uploads/2020/08/kedaton1-1.jpg",
         alt: "Alas Kedaton Monkey Forest",
@@ -237,9 +237,9 @@ const destinations = [
         alt: "Bali Botanic Garden",
         title: "Bali Botanic Garden",
         descCrd: { descId: "Kebun Raya Bali", descEn: "Bali Botanic Garden" },
-        ratingEn: "4.5 (152 reviews)",
-        ratingId: "4.5 (152 pengulas)",
-        ratingText: "4.5 (152)",
+        ratingEn: "4.6 (17.313 reviews)",
+        ratingId: "4.6 (17.313 pengulas)",
+        ratingText: "4.6 (17.313)",
         badge: { textEn: "", textId: "", color: "" }
     },
 
@@ -280,6 +280,30 @@ const destinations = [
         ratingText: "4.6 (21.963)",
         badge: { textEn: "Most Visited", textId: "Sering Dikunjungi", color: "bg-green-500" }
     },
+        {
+        category: "beach-club",
+        region: "badung",
+        img: "images/atlas.jpg",
+        alt: "Atlas Beach Club",
+        title: "Atlas Beach Club",
+        descCrd: { descId: "Kuta, Badung", descEn: "Kuta, Badung" },
+        ratingEn: "4.7 (15.390 reviews)",
+        ratingId: "4.7 (15.390 pengulas)",
+        ratingText: "4.7 (15.390)",
+        badge: { textEn: "Most Visited", textId: "Sering Dikunjungi", color: "bg-green-500" }
+    },
+    {
+        category: "beach-club",
+        region: "badung",
+        img: "images/savaya.jpg",
+        alt: "Savaya Beach Club",
+        title: "Savaya Beach Club",
+        descCrd: { descId: "Pecatu, Badung", descEn: "Pecatu, Badung" },
+        ratingEn: "4.1 (3.998 reviews)",
+        ratingId: "4.1 (3.998 pengulas)",
+        ratingText: "4.1 (3.998)",
+        badge: { textEn: "Top 1 in Asia", textId: "Nomor 1 di Asia", color: "bg-green-500" }
+    },
     {
         category: "waterfall",
         region: "badung",
@@ -302,7 +326,7 @@ const destinations = [
         ratingEn: "4.5 (68.505 reviews)",
         ratingId: "4.5 (68.505 pengulas)",
         ratingText: "4.5 (68.505)",
-        badge: { textEn: "Most popular", textId: "Palin populer", color: "bg-green-400" }
+        badge: { textEn: "Most popular", textId: "Paling populer", color: "bg-green-400" }
     },
     {
         category: "culture",
@@ -745,6 +769,18 @@ const destinations = [
         ratingId: "4.7 (11,200 pengulas)",
         ratingText: "4.7 (11,200)",
         badge: { textEn: "", textId: "", color: "" }
+    },
+    {
+        category: "culture",
+        region: "gianyar",
+        img: "images/kecak-dance.jpg",
+        alt: "Ubud Kecak Dance",
+        title: "Ubud Kecak Dance",
+        descCrd: { descId: "Ubud, Gianyar", descEn: "Ubud, Gianyar" },
+        ratingEn: "4.8 (15,340 reviews)",
+        ratingId: "4.8 (15,340 pengulas)",
+        ratingText: "4.8 (15,340)",
+        badge: { textEn: "Hot", textId: "Hangat", color: "bg-red-500" }
     },
     {
         category: "culture",
