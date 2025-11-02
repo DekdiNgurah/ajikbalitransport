@@ -38,6 +38,7 @@ nav .logo .bottom-up {
 
 .nav-parent .nav-list .inactive {
   transition: .3s ease-out;
+  cursor: pointer !important;
 }
 
 .nav-parent .nav-list .active {
@@ -70,6 +71,8 @@ nav .logo .bottom-up {
   cursor: pointer;
   z-index: 50;
 }
+
+
 
 nav .line {
   transition: 0.5s;
@@ -117,6 +120,10 @@ nav .line {
 
 .slide-up {
   max-height: 0;
+}
+
+.search-parent .search {
+  display: none;
 }
 
 .search-btn {
@@ -211,8 +218,20 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
+  /* border: 1px solid var(--primary-color); */
+  border: none;
+}
+
+.contact-form-container select option {
+  cursor: pointer !important;
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus,
+.contact-form-container select:focus {
   border: 1px solid var(--primary-color);
 }
+
 
 .gallery-container .active {
   background-color: var(--primary-color);
